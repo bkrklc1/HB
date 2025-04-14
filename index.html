@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arka Plan</title>
+    <title>Arka Plan ve Görseller</title>
     <style>
+        /* Arka Plan */
         body {
             background-image: url('https://raw.githubusercontent.com/bkrklc1/HB/main/fffba7541fbd6ba55484df3101ef658a.jpg');
             background-size: cover;
@@ -13,10 +14,37 @@
             margin: 0;
             padding: 0;
         }
+
+        /* İçerik */
+        .content {
+            position: relative; /* Arka planın üstünde görünmesi için relative */
+            z-index: 1; /* Arka planın üstünde */
+            color: white; /* Yazıların görünebilmesi için açık renk */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-container {
+            margin: 20px auto;
+            text-align: center; /* Görselleri ortalamak için */
+        }
+
+        .image-container img {
+            max-width: 90%; /* Görsellerin boyutunu ayarlamak */
+            border: 5px solid white; /* Görsellerin daha net görünmesi için kenar */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Görseller için gölge efekti */
+        }
     </style>
 </head>
 <body>
-    <h1>Merhaba Dünya!</h1>
-    <p>Bu sayfa, bir arka plan resmi ile oluşturulmuştur.</p>
+    <div class="content">
+        <h1>Merhaba Dünya!</h1>
+        <p>Bu bir test sayfasıdır.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://raw.githubusercontent.com/bkrklc1/HB/main/4e56bd918b10c91dbfb135f0eb912145.jpg" alt="Fotoğraf 1">
+        <img src="https://raw.githubusercontent.com/bkrklc1/HB/main/WhatsApp%20Image%202025-04-14%20at%2010.52.43.jpeg" alt="Fotoğraf 2">
+    </div>
 </body>
 </html>
