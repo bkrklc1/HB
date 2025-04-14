@@ -3,49 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Kitty'nin Sayfası</title> <!-- Başlık güncellendi -->
+    <title>Hello Kitty'nin Sayfası</title>
     <style>
         /* Arka Plan */
         body {
-            background-image: url('https://raw.githubusercontent.com/bkrklc1/HB/main/fffba7541fbd6ba55484df3101ef658a.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-color: #ffc0cb; /* Pembe arka plan */
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
         }
 
-        /* İçerik */
-        .content {
-            position: relative;
-            z-index: 1;
-            color: white;
+        /* Başlık Stili */
+        h1 {
+            color: #ff69b4; /* Daha koyu pembe */
             text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Fotoğraf Galerisi */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
             padding: 20px;
         }
 
-        .image-container {
-            margin: 20px auto;
-            text-align: center;
-        }
-
-        .image-container img {
-            max-width: 90%;
+        .gallery img {
+            max-width: 300px;
+            height: auto;
             border: 5px solid white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Merhaba Dünya!</h1>
-        <p>Bu bir test sayfasıdır.</p>
-    </div>
-
-    <div class="image-container">
-        <img src="https://raw.githubusercontent.com/bkrklc1/HB/main/4e56bd918b10c91dbfb135f0eb912145.jpg" alt="Fotoğraf 1">
-        <img src="https://raw.githubusercontent.com/bkrklc1/HB/main/WhatsApp%20Image%202025-04-14%20at%2010.52.43.jpeg" alt="Fotoğraf 2">
+    <h1>Hello Kitty'nin Sayfası</h1>
+    <div class="gallery">
+        <!-- Fotoğraflar -->
+        <img src="https://raw.githubusercontent.com/bkrklc1/HB/main/fffba7541fbd6ba55484df3101ef658a.jpg" alt="Fotoğraf 1">
+        <img src="https://raw.githubusercontent.com/bkrklc1/HB/main/4e56bd918b10c91dbfb135f0eb912145.jpg" alt="Fotoğraf 2">
+        <img src="https://raw.githubusercontent.com/bkrklc1/HB/main/WhatsApp%20Image%202025-04-14%20at%2010.52.43.jpeg" alt="Fotoğraf 3">
     </div>
 </body>
 </html>
-<img src="https://raw.githubusercontent.com/bkrklc1/HB/main/fffba7541fbd6ba55484df3101ef658a.jpg" alt="Fotoğraf">
