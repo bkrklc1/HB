@@ -43,3 +43,50 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifre Koruması</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #ffc0cb;
+        }
+        #content {
+            display: none; /* İçerik başlangıçta görünmez */
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            const username = prompt("Lütfen kullanıcı adını girin:");
+            const password = prompt("Lütfen şifreyi girin:");
+
+            if (username === "HB" && password === "1607") { // Kullanıcı adı ve şifreyi kontrol et
+                document.getElementById("content").style.display = "block"; // İçeriği göster
+                document.getElementById("lockScreen").style.display = "none"; // Şifre ekranını gizle
+            } else {
+                alert("Yanlış kullanıcı adı veya şifre!"); // Hatalı giriş uyarısı
+                location.reload(); // Sayfayı yenile
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+    <!-- Şifre Giriş Ekranı -->
+    <div id="lockScreen">
+        <h1>Sayfa Koruma Altında</h1>
+        <p>Lütfen doğru kullanıcı adı ve şifreyi girin.</p>
+    </div>
+
+    <!-- Şifreyle Korunan İçerik -->
+    <div id="content">
+        <h1>Başarıyla Giriş Yaptınız!</h1>
+        <p>Hello Kitty ve Batman'in sayfasına hoş geldiniz!</p>
+        <!-- Buraya asıl içerik eklenebilir -->
+    </div>
+</body>
+</html>
